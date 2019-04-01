@@ -12,6 +12,8 @@
 		27CD03BF224C116E0000EBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CD03BD224C116E0000EBD3 /* Main.storyboard */; };
 		27CD03C1224C11700000EBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27CD03C0224C11700000EBD3 /* Assets.xcassets */; };
 		27CD03C4224C11700000EBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27CD03C2224C11700000EBD3 /* LaunchScreen.storyboard */; };
+		27CD03CC224C1D2F0000EBD3 /* TVCAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD03CB224C1D2F0000EBD3 /* TVCAnimal.swift */; };
+		27CD03CE224C220F0000EBD3 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CD03CD224C220F0000EBD3 /* Animal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		27CD03C0224C11700000EBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		27CD03C3224C11700000EBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		27CD03C5224C11700000EBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CD03CB224C1D2F0000EBD3 /* TVCAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVCAnimal.swift; sourceTree = "<group>"; };
+		27CD03CD224C220F0000EBD3 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				27CD03B9224C116E0000EBD3 /* AppDelegate.swift */,
 				27CD03BB224C116E0000EBD3 /* ViewController.swift */,
 				27CD03BD224C116E0000EBD3 /* Main.storyboard */,
+				27CD03CD224C220F0000EBD3 /* Animal.swift */,
+				27CD03CB224C1D2F0000EBD3 /* TVCAnimal.swift */,
 				27CD03C0224C11700000EBD3 /* Assets.xcassets */,
 				27CD03C2224C11700000EBD3 /* LaunchScreen.storyboard */,
 				27CD03C5224C11700000EBD3 /* Info.plist */,
@@ -135,6 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27CD03CC224C1D2F0000EBD3 /* TVCAnimal.swift in Sources */,
+				27CD03CE224C220F0000EBD3 /* Animal.swift in Sources */,
 				27CD03BC224C116E0000EBD3 /* ViewController.swift in Sources */,
 				27CD03BA224C116E0000EBD3 /* AppDelegate.swift in Sources */,
 			);

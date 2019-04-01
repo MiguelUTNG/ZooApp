@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,104 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZooApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OG6-mX-Uu9">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnimal" rowHeight="161" id="AFx-Ef-MvR" customClass="TVCAnimal" customModule="ZooApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="161"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AFx-Ef-MvR" id="7q7-Rr-gXp">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Hc-Vd-ORS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="160.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baboon" translatesAutoresizingMaskIntoConstraints="NO" id="6Fx-1h-Jhd">
+                                                            <rect key="frame" x="17" y="18" width="110" height="16"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-Ez-NhB">
+                                                            <rect key="frame" x="145" y="18" width="261" height="23.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="261" id="aBV-P8-RnS"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="ecu-gf-2ku">
+                                                            <rect key="frame" x="145" y="45.5" width="261" height="106"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="106" id="PYX-fb-bd2"/>
+                                                            </constraints>
+                                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="6Fx-1h-Jhd" firstAttribute="top" secondItem="LXZ-Ez-NhB" secondAttribute="top" id="4l5-RL-wdL"/>
+                                                        <constraint firstItem="ecu-gf-2ku" firstAttribute="top" secondItem="LXZ-Ez-NhB" secondAttribute="bottom" constant="4" id="9Hv-ff-Ima"/>
+                                                        <constraint firstItem="LXZ-Ez-NhB" firstAttribute="leading" secondItem="6Fx-1h-Jhd" secondAttribute="trailing" constant="18" id="L2Y-5Y-3Q0"/>
+                                                        <constraint firstItem="6Fx-1h-Jhd" firstAttribute="top" secondItem="7Hc-Vd-ORS" secondAttribute="top" constant="18" id="WE6-gg-8p9"/>
+                                                        <constraint firstItem="6Fx-1h-Jhd" firstAttribute="leading" secondItem="7Hc-Vd-ORS" secondAttribute="leading" constant="17" id="Xrc-4H-2RH"/>
+                                                        <constraint firstItem="LXZ-Ez-NhB" firstAttribute="top" secondItem="7Hc-Vd-ORS" secondAttribute="top" constant="18" id="eab-g1-5x0"/>
+                                                        <constraint firstItem="LXZ-Ez-NhB" firstAttribute="trailing" secondItem="7Hc-Vd-ORS" secondAttribute="trailingMargin" id="fWH-su-yni"/>
+                                                        <constraint firstItem="LXZ-Ez-NhB" firstAttribute="leading" secondItem="ecu-gf-2ku" secondAttribute="leading" id="pjZ-hT-c6k"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ecu-gf-2ku" secondAttribute="bottom" constant="9" id="tcm-1J-gXT"/>
+                                                        <constraint firstItem="LXZ-Ez-NhB" firstAttribute="trailing" secondItem="ecu-gf-2ku" secondAttribute="trailing" id="v5Y-8e-Jka"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.83137254901960778" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="7Hc-Vd-ORS" firstAttribute="centerY" secondItem="7q7-Rr-gXp" secondAttribute="centerY" id="6CO-Uf-2c9"/>
+                                                <constraint firstAttribute="trailing" secondItem="7Hc-Vd-ORS" secondAttribute="trailing" id="OFf-e3-WK5"/>
+                                                <constraint firstItem="7Hc-Vd-ORS" firstAttribute="top" secondItem="7q7-Rr-gXp" secondAttribute="top" id="e3w-vg-Cga"/>
+                                                <constraint firstItem="7Hc-Vd-ORS" firstAttribute="leading" secondItem="7q7-Rr-gXp" secondAttribute="leading" id="o6i-dH-h28"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivAnimalImage" destination="6Fx-1h-Jhd" id="9T1-rI-2AZ"/>
+                                            <outlet property="laAnimalDes" destination="ecu-gf-2ku" id="JbX-xx-iXD"/>
+                                            <outlet property="laAnimalName" destination="LXZ-Ez-NhB" id="rvD-jN-8tH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OG6-mX-Uu9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5UK-sd-rHm"/>
+                            <constraint firstItem="OG6-mX-Uu9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7Iz-di-Kvs"/>
+                            <constraint firstAttribute="bottom" secondItem="OG6-mX-Uu9" secondAttribute="bottom" id="Arb-Ys-aY2"/>
+                            <constraint firstItem="OG6-mX-Uu9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XNP-Jj-Bm1"/>
+                            <constraint firstItem="OG6-mX-Uu9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YWm-5i-x05"/>
+                            <constraint firstItem="OG6-mX-Uu9" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="khv-dw-u86"/>
+                            <constraint firstItem="OG6-mX-Uu9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sga-7d-Wtu"/>
+                            <constraint firstAttribute="bottom" secondItem="OG6-mX-Uu9" secondAttribute="bottom" id="yBr-ZF-T9j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="tvListAnimal" destination="OG6-mX-Uu9" id="cF1-SV-aJb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="baboon" width="100" height="100"/>
+    </resources>
 </document>
